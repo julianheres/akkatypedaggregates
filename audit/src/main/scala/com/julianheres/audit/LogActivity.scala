@@ -1,6 +1,4 @@
-package main.scala
-
-import akka.actor.ActorRef
+package com.julianheres.audit
 
 case class LogActivity(who: ActorRef[Nothing], what: String, id: Long, replyTo: ActorRef[ActiviyLogged])
 
